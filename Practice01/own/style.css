@@ -1,0 +1,128 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li.topObject {
+    float: left;
+    border-right: 1px solid #bbb;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.topObject:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.div1 {
+    background-color: grey;
+    color: white;
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header {
+    background-color: darken($baseColor, 5%);
+    color: grey;
+    font-size: 1.5em;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+table {
+    width: 100%;
+}
+
+td,
+th {
+    text-align: center;
+    vertical-align: middle;
+    color: darken($baseColor, 10%);
+    padding: $padding;
+}
+
+tr {
+    text-align: center;
+    vertical-align: middle;
+    &:nth-child(2n) {
+        background-color: white;
+    }
+    &:nth-child(2n+1) {
+        background-color: lighten($baseColor, 55%)
+    }
+}
+
+input {
+    position: relative;
+    font-size: 1.5em;
+    background: linear-gradient(21deg, #10abff, #1beabd);
+    padding: 3px;
+    display: inline-block;
+    border-radius: 9999em;
+    *:not(span) {
+        position: relative;
+        display: inherit;
+        border-radius: inherit;
+        margin: 0;
+        border: none;
+        outline: none;
+        padding: 0 .325em;
+        z-index: 1;
+        &:focus+span {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    span {
+        transform: scale(.993, .94);
+        transition: transform .5s, opacity .25s;
+        opacity: 0;
+        position: absolute;
+        z-index: 0;
+        margin: 4px;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
+        pointer-events: none;
+        box-shadow: inset 0 0 0 3px #fff, 0 0 0 4px #fff, 3px -3px 30px #1beabd, -3px 3px 30px #10abff;
+    }
+}
+
+input {
+    font-family: inherit;
+    line-height: inherit;
+    color: #2e3750;
+    min-width: 12em;
+}
+
+::placeholder {
+    color: #cbd0d5;
+}
+
+ol.c {
+    list-style-type: upper-roman;
+}
+
+body {
+    background: radial-gradient(black 3px, transparent 4px), radial-gradient(black 3px, transparent 4px), linear-gradient(#fff 4px, transparent 0), linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px), linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px), #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
