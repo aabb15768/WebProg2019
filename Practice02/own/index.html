@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Viewer</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+</head>
+
+<body>
+    <div class="image-viewer__container">
+        <div>
+            <p class="image-viewer__title">Image Viewer</p>
+        </div>
+        <div class="image-viewer__main">
+            <span class="image-viewer__button" onclick="previousImage()">
+                <img src="./images/back.png" alt="back">
+            </span>
+            <span class="image-viewer__display">
+               <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/dc23cd051d2249a5903d25faf8eeee4c/BFV36537_CC2017_2IngredintDough4Ways-FB.jpg?output-quality=60&resize=1000:*" alt="back" id="display">
+            </span>
+            <span class="image-viewer__button" onclick="nextImage()">
+                <img src="./images/next.png" alt="back">
+            </span>
+        </div>
+        <div class="image-viewer__display-source-wrapper">
+            <p>
+                Source:<a href="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/dc23cd051d2249a5903d25faf8eeee4c/BFV36537_CC2017_2IngredintDough4Ways-FB.jpg?output-quality=60&resize=1000:*" id="source">https://img.buzzfeed.com/thumbnailer-prod-us-east-1/dc23cd051d2249a5903d25faf8eeee4c/BFV36537_CC2017_2IngredintDough4Ways-FB.jpg?output-quality=60&resize=1000:*</a>
+            </p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
