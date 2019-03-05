@@ -1,5 +1,4 @@
-<div style="text-align:center">Ric's Webprogramming Practive 02<br>comment</div>
-===
+<h1 style="text-align:center">Ric's Webprogramming Practive 02<br>comment</h1>
 ## 1. 完成度: 90%
 * 因為在等待圖片上傳的時候，沒有小齒輪的圖案，避免背景一片空白，所以完成度給90%，如果不知道怎麼做可以google javascript lazy loading，會有很多種方法可以實作，我查到的有五種。
 
