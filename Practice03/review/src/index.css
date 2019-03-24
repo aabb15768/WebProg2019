@@ -1,14 +1,97 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background: url('https://2.bp.blogspot.com/--EZID3bFoYI/WqTIj1sYBXI/AAAAAAAATp8/CkW7Acd6fAk_XGkID_6nv8SMrnd0aCdawCLcBGAs/s1600/background1.jpg') 0 0 repeat fixed;
+    word-wrap: break-word;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+#root {
+    padding: 40px 0;
+}
+
+.container {
+    display: flex;
+    background-color: #ffffff;
+    width: 83.33vw;
+    margin: auto;
+    box-shadow: 0 0 30px 8px rgba(0,0,0,1);
+    color: #787c7f;
+}
+
+.content {
+    width: 54.84vw;
+    margin: 4.17vw 3.47vw;
+}
+
+.content h1 {
+    text-align: center;
+    color: #3c4243;
+    font: normal 24px;
+    margin-bottom: 15px;
+}
+
+.content img {
+    width: 100%;
+}
+
+.date {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.sidebar {
+    background-color: #1c2123;
+    color: #dbdbdb;
+    /*float: left;*/
+    margin-left: 0;
+    width: 26.35vw;
+}
+
+.sidebar2 {
+    margin: 20px;
+    padding: 14px;
+    background-color: #23292a;
+}
+
+.sidebar_title {
+    margin-bottom: 2.5em;
+}
+
+.sidebar2 h1 {
+    font-size: 30px;
+    line-height: 1.063em;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+.sidebar2 h2 {
+    color: #fff;
+    font-family: Oswald;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.widget {
+    margin-bottom: 38px;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.categories li {
+    padding: 6px 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #424748;
+    cursor: pointer;
+}
+
+.categories a {
+    color: #d2a76a;
+    text-decoration: none;
+}
+
+.categories a:hover {
+    color: #787c7f
 }

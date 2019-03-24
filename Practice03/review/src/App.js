@@ -1,54 +1,48 @@
 import React, { Component } from 'react';
+import logo from './logo.svg';
 import './App.css';
-import edit from './edit.svg';
-import search from './search.png';
-import trash from './trash.png';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-
-        <div className="blogHead">
-          <div className="blogName">
-            Peter's Blog
-          </div>
-          <div className="titleList">
-            <button>Title 1</button>
-            <button>Title 2</button>
-            <button>Title 3</button>
-            <img className="search" align="right" src={search} />
-          </div>
-        </div>
-
-        <div className="postWrapper">
-          <textarea className="post" placeholder="Post here...">
-          </textarea>
-          <button className="postBtn">
-            Post
-          </button>
-        </div>
-
-        <div className="articleWrapper">
-          <div className="articleHead">
-            <div className="articleTitle">
-              Article Title
+class main extends Component {
+    render() {
+        return (
+            <div className="container">
+                <div className="sidebar">
+                    <div className="sidebar2">
+                        <div className="sidebar_title">
+                            <h1>My Blog</h1>
+                        </div>
+                        <div className="categories widget">
+                            <h2>Categories</h2>
+                            <ul>
+                                {this.props.categoryIndex.map( e => <li><a href={e.url}>{e.category}</a></li> )}
+                            </ul>
+                        </div>
+                        <div className="myself widget">
+                            <h2>Introduction</h2>
+                            <div className="intro">
+                                <p>Knight Rider, a shadowy flight into the dangerous world of a man who does not exist. Michael Knight, a young loner on a crusade to champion the cause of the innocent, the helpless in a world of criminals who operate above the law.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="content">
+                    {this.props.diary.map(
+                        e => <div className="diary">
+                                <h1>{e.title}</h1>
+                                <img src={e.picture}/>
+                                <div className="paragraph">
+                                    {e.paragraph.map( el => <p>{el}</p> )}
+                                </div>
+                                <div className="date">
+                                    {e.date}
+                                </div>
+                                <img alt="spacer" src="https://1.bp.blogspot.com/-65NY_Xae6lE/WqTIjxpmK2I/AAAAAAAATp4/8w3TYc8EwgQ2xpzZcxLXajNh8uz7a8SEgCLcBGAs/s1600/post-shadow.png"/>
+                             </div>)
+                    }
+                </div>
             </div>
-            <div className="articleAuthor">
-              This article is edited by Peter.
-              <img className="edit" src={edit} />
-              <img className="delete_" src={trash} />
-            </div>
-          </div>
-
-          <div className="articleContent">
-            Hello, World!
-          </div>
-        </div>
-
-      </div>
-    );
-  }
+        );
+    }
 }
 
-export default App;
+export default main;
