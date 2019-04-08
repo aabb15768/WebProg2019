@@ -1,4 +1,4 @@
-<div style="text-align:center">Ric's Webprogramming Practice 05<br>comment</div>
+<h1 style="text-align:center">Ric's Webprogramming Practice 05<br>comment</h1>
 
 ===
 
