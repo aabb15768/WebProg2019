@@ -1,5 +1,4 @@
 <h1 style="text-align:center">Ric's Webprogramming Practice 05<br>comment</h1>
-===
 
 ## 1. 完成度: 85%
 * 有5%是因為沒有comment，註解與程式碼是一樣重要，而不可或缺的一部份。
